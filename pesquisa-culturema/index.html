@@ -5,5 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pesquisa Culturama</title>
   </head>
-  <body></body>
+  <main>
+    <header>
+      <h1>Pesquisa Online</h1>
+    </header>
+
+    <section>
+      <form action="" method="get">
+        <!-- DADOS PESSOAIS -->
+
+        <fieldset>
+          <legend>Dados Pessoais</legend>
+          <label for="userName">Nome</label>
+          <input type="text" name="userName" required />
+          <br />
+          <label for="userAge">Idade</label>
+          <input type="number" name="userAge" min="12" max="100" required />
+          <br />
+          <label for="birtDate">Data Nascimento</label>
+          <input type="date" name="birtDate" />
+          <br />
+          <label for="userEmail">Email</label>
+          <input type="email" name="userEmail" required />
+          <br />
+          <label for="userNumerPhone">Telefone</label>
+          <input
+            type="tel"
+            name="userNumerPhone"
+            pattern="[0-9]{11}"
+            placeholder="11111111111"
+            required
+          />
+          <br />
+          <label for="userImage">Upload de Foto</label>
+          <input type="file" accept="image/*" name="userImage" />
+          <br />
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
 </html>
