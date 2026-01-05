@@ -42,7 +42,7 @@
           <br />
         </fieldset> -->
 
-        <fieldset>
+        <!-- <fieldset>
           <legend>Perfil</legend>
           <p>Gênero</p>
           <input type="radio" name="userGenero" value="1" />
@@ -61,7 +61,7 @@
           </select>
 
           <label for="estado">Estado</label>
-          <select name="estado">
+          <select name="estado" required>
             <option value="notInfomed">Selecione...</option>
             <option value="Acre">Acre</option>
             <option value="Rio de Janeiro">Rio de Janeiro</option>
@@ -75,7 +75,21 @@
             <option value="São Gonçalo">São Gonçalo</option>
             <option value="Calçoene">Calçoene</option>
           </select>
+        </fieldset> -->
+
+        <fieldset>
+          <legend>Hábitos</legend>
+
+          <input type="checkbox" name="social" value="instagram" />
+          <label for="social">Instagram</label>
+          <br />
+          <input type="checkbox" name="zap" value="whatzap" />
+          <label for="zap">Whatzap</label>
+          <br />
+          <input type="checkbox" name="facebook" value="facebook" />
+          <label for="facebook">Facebook</label>
         </fieldset>
+
         <br />
         <button type="submit">Enviar</button>
       </form>
